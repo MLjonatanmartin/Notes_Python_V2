@@ -268,23 +268,21 @@ No podemos dividir entre cero `0` porque nos da el error: `ZeroDivisionError`
 
 ### Shortcuts - Atajos:
 
-    Podemos realizar operaciones sencillas de números con una sitaxis corta, 
-    para hacerlo colocamos la variable luego el operador de la operación, 
-    seguimos con un  signo igual y por último el número de la operación. 
-    Por ejemplo:
+Podemos realizar operaciones sencillas de números con una sitaxis corta, 
+para hacerlo colocamos la variable luego el operador de la operación, 
+seguimos con un  signo igual y por último el número de la operación. 
+Por ejemplo:
 
-    ```python
+```python
+num = 7
+num *= 2
+```
+
+Resultado
+
+`14`
     
-    num = 7
-
-    num *= 2
-    ```
-
-    Resultado
-
-    `14`
-    
-    Con esto nos ahorramos tiempo y no repetimos tanto código. 
+Con esto nos ahorramos tiempo y no repetimos tanto código. 
 
 ## Comparaciones Matemáticas con `Python`:
 
