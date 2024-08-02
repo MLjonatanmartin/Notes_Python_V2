@@ -210,9 +210,87 @@ etc.
 
     `Ella se llama "Sofia"`
 
-    Con la secuencia de escape `\`podemos usar caracteres especiales evitando
+    Con la secuencia de escape `\` podemos usar caracteres especiales evitando
     errores en la sintaxis y podemos imprimir bien lo que necesitamos. 
 ---
 
 # Clase #6
 
+## Operaciones Matemáticas en `Python`:
+
+Para poder realizar operaciones matemáticas en `python` debemos tener en 
+cuenta las reglas de la aritmética, para poder realizar operaciones en el 
+orden establecido ya que `python` sigue estas mismas reglas y si no las 
+conocemos nuestras operaciones no darán resultados erroneos. 
+
+Para resumirlo, se usa el acrónimo __PENDAS__ que es: parentesis, exponentes,
+multiplicación, división, suma y resta. En este mismo orden `python` realiza
+las operaciones matemáticas de izquierda a derecha. 
+
+Para realizar operaciones matemáticas usamos los siguientes operadores:
+
+1. **Suma**:
+
+    Con el operador `+` podemos realizar suma. 
+
+2. **Resta**:
+
+    Con el operador `-` podemos realizar resta.
+
+3. **Multiplicación**:
+    Con el operador `*` podemos realizar multiplicación.
+
+4. **Potenciación**:
+    
+    Con el operador `**` podemos realizar potenciación.
+
+5. **División**:
+    
+    Con el operador `/` podemos realizar divisiones.
+
+6. **División Entera**:
+    
+    Con el operador `//` podemos realizar divisiones enteras.
+
+    Divisiones enteras quiere decir que tendremos la división sin decimales.
+
+7. **Módulo de la División**:
+
+    Con el operador `%` podemos sacar el módulo de una división.
+
+    El Módulo de una división es el resultado del número sobrante de una
+    división, por ejemplo, si dividimos 12 entre 5 nos sobra 2, ese el 
+    módulo. 
+
+## Comparaciones Matemáticas con `Python`:
+
+También podemos realizar operaciones Booleanas con nuestros números en
+`python` para poder hacerlo lo hacemos con los siguientes operadores lógicos:
+
+1. **Mayor que** :
+
+    Con el operador `>` podemos ver si un número es mayor a otro.
+
+2. **Menor que**:
+
+    Con el operador `<` podemos ver si un número es menor a otro.
+
+3. **Mayor o igual que**:
+
+    Con el operador `>=` podemos ver si un número es mayor o igual a otro.
+
+4. **Menor o igual que**:
+
+    Con el operador `<=` podemos ver si un número es menor o igual a otro.
+
+5. **Es igual a**:
+
+    Con el operador `==` podemos ver si número es igual a otro.
+
+6. **No es igual a**:
+
+    Con el operador `!=` podemos ver si número no es igual a otro. 
+
+---
+
+# Clase #7
