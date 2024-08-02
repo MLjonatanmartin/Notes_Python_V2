@@ -315,4 +315,30 @@ También podemos realizar operaciones Booleanas con nuestros números en
 
 ---
 
-# Clase #7
+# Clase #7 
+
+## Operaciones de Entrada y Salida en Consola
+
+Cuando trabajamos con proyectos que necesitamos datos entrada y de salida 
+en la consola usamos la función incorporada de `input()`, con esta función
+podemos solicitar datos que un usuario puede ingresar.
+
+**Cosas Importantes de `input()`**:
+
+1. Con `input()` siempre ingresamos los datos a través de la consola. 
+2. Para poder ver que hemos ingresado tenemos que usar `print()`.
+3. Todo dato ingresado a través de `input()` lo retorna como `string`. 
+
+## Casting - Convertir a Otros Tipos de Datos:
+
+Podemos usar funciones incorporadas para transformar los tipos de datos de 
+datos con los siguientes métodos:
+
+1. `int()`: Convierte un valor a un número entero.
+2. `float()`: Convierte un valor a un número de punto flotante (decimal).
+3. `str()`: Convierte un valor a una cadena de texto. 
+4. `boo()`: Convierte un calor a booleano. 
+
+---
+
+# Clase #8
