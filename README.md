@@ -93,7 +93,7 @@ manera:
 
 ---
 
-# Clase #4
+# Clase #5
 
 ## Print y sus usos
 
@@ -141,12 +141,12 @@ etc.
     Para cambiar eso podemos usar `end` y con eso controlar el comportamiento
     al final cuando algo se termine de imprimir.
 
-6. **Uso de formatos con `f-strings`**:
+6. **Uso de formatos con `strings`**:
 
     Podemos imprimir varias cosas y de distintas maneras, atención a los
     siguientes métodos:
 
-   - **Most Common**:
+    - **Most Common**:
 
         `f'{} {}'`
 
@@ -154,7 +154,65 @@ etc.
         corchetes colocas las variables/funciones. El texto lo puedes poner
         antes o después de un corchete.
 
+    - **Uso de Formato con `format`**:
+
+        `.format(value1, value2)`
+
+        Con el método `format` es otra manera para insertar valores en 
+        cadenas de texto. En los corchetes `{}` usandolos como marcadores 
+        de posición, se pueden pasar los valores que uno quiera poner. Por 
+        ejemplo:
+
+        ```python
+        color = 'azul'
+        color_2 = 'verdes'
+        print('el cielo es {} y las hojas de los árboles son {}.'.format(azul, color_2))
+        ```
+
+        Resultado:
+
+        `el cielo es azul y las hojas de los árboles con verdes.`
+
+7. **Impresión con formato específico**
+
+    Podemos controlar como se imprimen el formato de los números en `python`.
+    En este ejemplo, vamos a redondear el número PI a solo dos décimales, 
+    para ello usamos `:.2f`que redondea a dos digitos. 
+
+    ```python
+    num = 3.14159
+    print('Valor: {:2.f}'.format(num))
+    ```
+
+    Resultado
+
+    `Valor: 3.14`
+
+8. **Salto de Línea** 
+
+    Para poder hacer los saltos del línea usamos `\n`. Por ejemplo, si 
+    hacemos `print('Colores\nMuchos Colores') vamos a tener:
+
+    ```python
+    Colores
+    Muchos Cholores
+    ```
+
+9. **Caracteres Especiales**
+
+    Si necesitamos colocar comillas dobles dentro de comillas simples usamos
+    secuencias de escape `\` para que el interprete de python no se confunda.
+    Por ejemplo:
+
+    `print('Ella se llama \"Sofia\"')`
+
+    Resultado
+
+    `Ella se llama "Sofia"`
+
+    Con la secuencia de escape `\`podemos usar caracteres especiales evitando
+    errores en la sintaxis y podemos imprimir bien lo que necesitamos. 
 ---
 
-# Clase #5
+# Clase #6
 
