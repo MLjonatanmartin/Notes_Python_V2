@@ -117,11 +117,10 @@ etc.
         Cuando usas este operador, une las cosas tal cual están sin agregar
         espacios. Recuerda agregar espacios para que quede realmente bien.
 
-3. **Uso de la coma**:
+3. **Uso de la coma `,`**:
 
-        Con la coma puedes unir cosas para que se impriman en la misma 
-        expresión de `print`. Cuando la usas, te coloca un espacio por
-        defecto.
+    Con la coma puedes unir cosas para que se impriman en la misma expresión
+    de `print`. Cuando la usas, te coloca un espacio por defecto.
 
 4. **Uso de `sep`**:
 
