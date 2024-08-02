@@ -339,6 +339,19 @@ datos con los siguientes métodos:
 3. `str()`: Convierte un valor a una cadena de texto. 
 4. `boo()`: Convierte un calor a booleano. 
 
+**NOTA**
+
+1. Error al usar _Casting_:
+    
+    Si hacemos Casting con `input()` de una vez y no le pasamos el tipo de 
+    dato correcto puede generar error. Por ejemplo, podemos tener:
+
+    `int(ipunt())`
+
+    y si no le pasamos un valor númerico no dará un error de:
+
+    `ValueError`
+
 ---
 
 # Clase #8
