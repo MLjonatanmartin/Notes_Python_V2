@@ -359,9 +359,10 @@ datos con los siguientes métodos:
 ## Arrays (Lista) - Introducción General 
 
 Las Listas son una estructura de datos más útilizada y flexible en Python.
-Las Listas son una colección ordenada de elementos, pueden almacenar 
-cualquier tipo de dato, también son mutables lo que significa que se pueden
-cambiar, agregar o eliminar elementos después de que haya sido creada. 
+Las Listas son una colección ordenada de elementos (indexada), pueden
+almacenar cualquier tipo de dato, también son mutables lo que significa 
+que se pueden cambiar, agregar o eliminar elementos después de que haya sido
+creada. 
 
 **Sintaxis**
 
