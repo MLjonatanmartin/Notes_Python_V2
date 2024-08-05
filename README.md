@@ -355,3 +355,72 @@ datos con los siguientes métodos:
 ---
 
 # Clase #8
+
+## Arrays (Lista) - Introducción General 
+
+Las Listas son una estructura de datos más útilizada y flexible en Python.
+Las Listas son una colección ordenada de elementos, pueden almacenar 
+cualquier tipo de dato, también son mutables lo que significa que se pueden
+cambiar, agregar o eliminar elementos después de que haya sido creada. 
+
+**Sintaxis**
+
+Para crear una lista usa los corchetes cuadrados `[]` y sepera los elementos
+por comas `,`. Los `string` deben de ir entre comillas simples `''` o 
+dobles `""`. Por ejemplo:
+
+```python
+
+numbers = [1, 2, 3, 4, 'cinco']
+
+```
+
+Por otro lado también puedes tener una lista dentro de otra lista o una 
+lista que su conjuto de datos sean otras listas. Por ejemplo:
+
+```python
+
+numbers = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+```
+
+## Métodos Más Comunes de las Listas:
+
+Los métodos que más se usan con lista son:
+
+1. `len()`: Para ver el tamaño total de una lista. 
+2. `.append()`: Para agregar un nuevo valor al final de la lista. 
+3. `.insert(i, x)`: Agrega un elemento `x`en la posición `i`. 
+4. `.index(x)`: Devuelve el índice de la primera aparición del valor `x`. 
+5. `max()`: Encuentra el valor más grande.
+6. `min()`: Encuentra el valor más pequeño. 
+7. `.extend(iterable)`: Extiende la lista agregando elementos de un iterable. 
+8. `.remove(x)`: Elimina la primera aparición del valor `x`. 
+9. `.pop(i)`: Elimina y devuelve el elemento de la posición `i`. Si no se 
+    especifica `i`, elimina y devuelvel el último elemento. 
+10. `.count(x)`: Devuelve el número de veces que `x` aparece en la lista. 
+11. `.sort()`: Ordena la lsita en su lugar. 
+12. `.reverse()`: Invierte los elementos de la lista en su lugar. 
+
+## Operaciones de Slicing con Listas
+
+El slicing permite obtener sub-listas a partir de una lista existente, 
+utilizando la notnación `[inicio:fin:paso]`. Por ejemplo:
+
+```python
+
+numeros = [1, 2, 3, 4, 6, 7, 8]
+
+sub_lista = numers[1:5] # Elementos desde el índice 1 hasta el 4
+
+sub_lista_con_paso = numeros[::2] # [1, 3, 6, 8]
+
+invertida = numeros[::-1] # [8, 7, 6, 4, 3, 2, 1]
+```
+
+**NOTA**
+
+Puedes usar `del` para eliminar posiciones especifica con el índice de una 
+lista, o la puedes eliminar toda. Solo hay que tener en cuenta que `del` 
+se utiliza para eliminar objetos y la referencia en memoria,no es método de
+las litas como tal, sino una declaración del propio lenguaje. Pero se puede
+usar sin problema con las listas. 
