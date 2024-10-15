@@ -443,6 +443,15 @@ Para evitar eso, se crea una lista totalmente independiente con el `[:]`
 numbers = [1, 2, 3, 4, 5]
 numbers_2 = numbers
 ```
+para poder mirar la referencia en memoria, usa el método `id()` de la 
+siguiente manera:
+
+```python
+id(numbers)
+id(numbers_2)
+```
+
+
 En ese ejemplo, lo que pase en una lista se va a ver reflejado en otra. La
 manera correcta de tener dos listas totalmente indenpendiente es:
 
