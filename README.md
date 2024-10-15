@@ -425,3 +425,32 @@ lista, o la puedes eliminar toda. Solo hay que tener en cuenta que `del`
 se utiliza para eliminar objetos y la referencia en memoria,no es método de
 las litas como tal, sino una declaración del propio lenguaje. Pero se puede
 usar sin problema con las listas. 
+
+---
+
+# Clase #9 
+
+## Modificación copia de una listas
+
+al tener una lista, si copiamos la lista asignando la a una nueva variable
+ambas van a apuntar al **MISMO OBJETO** en memoria. Esto significa que lo 
+que haga en una de ellas se va a reflejar en la otra.  
+
+Para evitar eso, se crea una lista totalmente independiente con el `[:]`
+
+```python
+
+numbers = [1, 2, 3, 4, 5]
+numbers_2 = numbers
+```
+En ese ejemplo, lo que pase en una lista se va a ver reflejado en otra. La
+manera correcta de tener dos listas totalmente indenpendiente es:
+
+```python
+numbers = [1, 2, 3, 4, 5]
+numbers_2 = numbers[:]
+```
+
+Con eso nos aseguramos que ambas listas sean diferentes. 
+
+---
