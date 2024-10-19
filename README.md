@@ -463,3 +463,8 @@ numbers_2 = numbers[:]
 Con eso nos aseguramos que ambas listas sean diferentes. 
 
 ---
+
+# Clase #10
+## Listas de más dimensiones y Tuplas
+
+

@@ -4,10 +4,26 @@ Implementarion of a basic calculator to perform arithmetic operations
 
 operations = ['+', '-', 'x', '/']
 
-num_user1, operation, num_user2 = input("write your operation\n")
+user_operation = input("Write your operation\n")
+num1 = []
+num2 = []
+operation = []
+after_operator = False
 
-num1 = int(num_user1)
-num2 = int(num_user2)
+for i in user_operation:
+    if i in operations: 
+        operation.append(i)
+        after_operator= True
+    else:
+        if after_operator:
+            num2.append(i)
+        else:
+            num1.append(i)
+
+num1_int = int("".join(num1))
+operation_str = "".join(operation)
+num2_int = int("".join(num2))
+
 
 def calculator(num1, operation, num2):
     
@@ -33,12 +49,12 @@ def calculator(num1, operation, num2):
             print(result)
 
         else:
-            if num2 > 0:
+            if num2 <= 0:
                 print("Error, you can't divide number in zero")
             else:
                 result = calculation["div"] (num1, num2)
                 print(result)
 
 
-calculator(num1, operation, num2)
+calculator(num1_int, operation_str, num2_int)
 
