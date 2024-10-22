@@ -465,6 +465,50 @@ Con eso nos aseguramos que ambas listas sean diferentes.
 ---
 
 # Clase #10
+
 ## Listas de más dimensiones y Tuplas
 
+### Matrices y/o Listas Anidadas
 
+Cuando tenemos una lista, podemos tener listas dentro de la lista. Estas
+pueden ser matrices, ya que se acomodan listas debajo de otras del mismo
+tamaño. Podemos, a su vez, ubicarlas como "columnas" y "filas".
+
+Con las listas anidadas, son otras listas que están dentro de otra. 
+
+Por ejemplo:
+
+```python
+
+# Matris
+
+matrix = [
+        [1,2,3],
+        [4,5,6],
+        [7,8,9]]
+```
+
+Para poder acceder a esa matris, tenemos que recordar la posición de los
+valores en programación. Cada cosa comienza en el valor 0, en este caso 
+tenemos una lista con 2 valores:
+
+1. 0 es la sublista de 1, 2 y 3.
+2. 1 es la sublista de 4, 5 y 6.
+3. 2 es la sublista de 7, 8 y 9. 
+
+y cada valor de cada sublista, se cuenta de la misma manera. Para poder
+acceder a un elemento de la lista en especifico usamos los `[]`. Por ejemplo:
+
+```python
+
+# Matris
+
+matrix = [
+        [1,2,3],
+        [4,5,6],
+        [7,8,9]]
+
+print(matrix[0]) # Imprime [1,2,3]
+```
+
+Con el índice podemos 
