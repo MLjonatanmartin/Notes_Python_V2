@@ -24,7 +24,7 @@ ser números para mantener la coherencia en el código.
 y cosas más avanzadas, son referencias de punteros a objetos en memoria. En
 los lenguajes de programación hay palabras reservadas, por lo que esas
 palabras no se pueden usar para nombrar variables. Las variables a lo 
-largo del código se les puede cambiar de valor reasignar.
+largo del código se les puede cambiar de valor, se puede reasignar un nuevo valor.
 
 ---
 
@@ -105,8 +105,8 @@ mundo exterior.
 
 **Métodos básicos de print**:
 
-1. Usándolo para imprimir en consola mensajes, variables, funciones, datos,
-etc.
+1. Su uso más común es para imprimir en consola mensajes, variables, funciones,
+datos, etc.
 
 2. **Concatenar**:
 
@@ -399,7 +399,7 @@ Los métodos que más se usan con lista son:
 9. `.pop(i)`: Elimina y devuelve el elemento de la posición `i`. Si no se 
     especifica `i`, elimina y devuelvel el último elemento. 
 10. `.count(x)`: Devuelve el número de veces que `x` aparece en la lista. 
-11. `.sort()`: Ordena la lsita en su lugar. 
+11. `.sort()`: Ordena la lista en su lugar. 
 12. `.reverse()`: Invierte los elementos de la lista en su lugar. 
 
 ## Operaciones de Slicing con Listas
@@ -443,6 +443,7 @@ Para evitar eso, se crea una lista totalmente independiente con el `[:]`
 numbers = [1, 2, 3, 4, 5]
 numbers_2 = numbers
 ```
+
 para poder mirar la referencia en memoria, usa el método `id()` de la 
 siguiente manera:
 
@@ -450,7 +451,6 @@ siguiente manera:
 id(numbers)
 id(numbers_2)
 ```
-
 
 En ese ejemplo, lo que pase en una lista se va a ver reflejado en otra. La
 manera correcta de tener dos listas totalmente indenpendiente es:
