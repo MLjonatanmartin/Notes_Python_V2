@@ -558,13 +558,11 @@ si queremos acceder a  la lista `[5,6]` lo hacemos de la siguiente manera:
 ```python
 
 numbers = [
-    [1,2],
-    [3,4],
-    [5,6],
-    [7,8]
+    [[1,2], [3,4]],
+    [[5,6], [7,8]]
 ]
 
-print(numbers[2]) # Imprime [5,6]
+print(numbers[1]) # Imprime [5,6], [7,8]
 
 ```
 
@@ -573,13 +571,11 @@ Pero si queremos acceder al valor `5`, lo hacemos de la siguiente manera:
 ```python
 
 numbers = [
-    [1,2],
-    [3,4],
-    [5,6],
-    [7,8]
+    [[1,2], [3,4]],
+    [[5,6], [7,8]]
 ]
 
-print(numbers[2][0]) # Imprime 5
+print(numbers[1][0][0]) # Imprime 5
 ```
 
 ## Tuplas
