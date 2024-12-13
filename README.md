@@ -472,9 +472,17 @@ Con eso nos aseguramos que ambas listas sean diferentes.
 
 Cuando tenemos una lista, podemos tener listas dentro de la lista. Estas
 pueden ser matrices, ya que se acomodan listas debajo de otras del mismo
-tamaño. Podemos, a su vez, ubicarlas como "columnas" y "filas".
+tamaño. También, se pueden tener vectores cuando las úbicamos de esa manera.
+
+
+Podemos, a su vez, ubicarlas como "columnas" y "filas", las columnas son las
+verticales y las filas son las Horizontales.
 
 Con las listas anidadas, son otras listas que están dentro de otra. 
+
+Es importante que las listas dentro de otras listas se separan por comas `,`, 
+en caso que no las separemos los valores por comas `,` nos causa un error
+de sintaxis. 
 
 Por ejemplo:
 
@@ -488,7 +496,7 @@ matrix = [
         [7,8,9]]
 ```
 
-Para poder acceder a esa matris, tenemos que recordar la posición de los
+Para poder acceder a esa matris (lista), tenemos que recordar la posición de los
 valores en programación. Cada cosa comienza en el valor 0, en este caso 
 tenemos una lista con 2 valores:
 
@@ -511,4 +519,101 @@ matrix = [
 print(matrix[0]) # Imprime [1,2,3]
 ```
 
-Con el índice podemos 
+Ahora si yo quiero acceder a un valor especifico de esta matrix, puedo 
+hacer lo de la siguiente manera:
+
+```python
+
+# Matris
+
+matrix = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+]
+
+print(matrix[2][1]) # Imprime 8
+```
+
+Con este ejemplo veos que accedemos primero a la última lista, y de ahí hemos
+accedido al valor 1, que es el 8. 
+
+### Matris y/o Lista Anidada más compleja
+
+Si tenemos una lista más compleja, como por ejemplo:
+
+```python
+
+numbers = [
+    [1,2],
+    [3,4],
+    [5,6],
+    [7,8]
+]
+```
+
+Como podemos ver, tenemos una lista, con listas, que tienen varios valores,
+si queremos acceder a  la lista `[5,6]` lo hacemos de la siguiente manera:
+
+```python
+
+numbers = [
+    [1,2],
+    [3,4],
+    [5,6],
+    [7,8]
+]
+
+print(numbers[2]) # Imprime [5,6]
+
+```
+
+Pero si queremos acceder al valor `5`, lo hacemos de la siguiente manera:
+
+```python
+
+numbers = [
+    [1,2],
+    [3,4],
+    [5,6],
+    [7,8]
+]
+
+print(numbers[2][0]) # Imprime 5
+```
+
+## Tuplas
+
+Hay dos formas de declarar tuplas:
+
+1. Con `()`, usa los `()` para declarar.
+2. Con `(value,)` de esta manera si necesitas declarar una tupla con un solo
+valor. 
+3. `numbers = 1,2,3,` Python sobre entiende que eso es una tupla, pero mejor
+usar los parentesis para que el código se lea mucho más fácil.
+
+Las tuplas son listas inmutables, no sé pueden ni agregar y ni quitar, ni modificar
+algún valor. Pero como cosa curiosa, si tienes una lista dentro de una tupla
+si puedes modificar la lista, pero la lista se tiene que conservar su estructura
+de los valores reconocidos de la tupla, por ejemplo, si tengo una tupla con una
+lista de 2 valores, puedo cambiar esos dos valores pero no puedo ni eliminar
+o agregar un nuevo valor ya que choca con la inmutabilidad de una tupla. 
+
+ejemplo de tupla:
+
+```python
+
+names = ('luciano', 'miku', 'vegeta')
+
+print(names[1]) # imprime miku
+
+```
+
+Para acceder a las tuplas, o tuplas aninadadas, es de la misma manera como lo
+hemos visto antes. 
+
+---
+
+# Clase #11
+
+##
