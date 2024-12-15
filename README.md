@@ -612,4 +612,36 @@ hemos visto antes.
 
 # Clase #11
 
+## Diccionarios
+
+Los diccionarios son para guardar información, como lo dice su nombre son 
+diccionarios, en donde tenemos una palabra clave y su significado o valor. 
+
+Para poder declarar un diccionario lo hacemos con los siguientes corchetes `{}`,
+para poder colocar el significado de una clave usamos `:` y para separar cada clave
+y valor usamos `,`.
+
+Los diccionarios pueden alvergan mucha información, desde cualquier tipo de dato
+hasta funciones, configuración de servidores, listas, tuplas y otros diccionarios. 
+
+Las claves, solo pueden ser de valor inmutable, tales como: String, números y 
+tuplas. En cambio que los valores si puedes ser mutables. 
+
+### Métodos de los diccionarios (básicos):
+
+1. `.key()`: Es para obtener las palabras claves de los diccionarios. 
+2. `.values()`: Es para obrtener los valores de los diccionarios. 
+3. `.items()`: Es para obtener las palabras calves y valor en tuplas de un  
+diccionario.
+4. `del`: Puedes usarlo para eliminar una clave y valor del diccionario.
+
+### Acceder a un diccionario:
+
+Para acceder a un diccionario, usas los siguientes corchetes `[]` y en medio
+colocas la clave del diccionario para poder acceder. Si tienes un string, tienes
+que poner las comillas respectivas.
+
+---
+
+# Clase # 12
 ##
