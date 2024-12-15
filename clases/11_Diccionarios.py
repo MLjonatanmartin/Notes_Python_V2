@@ -1,8 +1,5 @@
 # Declaración de un diccionario
 
-from click import edit
-
-
 information = {
     'nombre' : 'juan',
     'apellido' : 'martin',
