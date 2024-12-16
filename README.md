@@ -644,4 +644,36 @@ que poner las comillas respectivas.
 ---
 
 # Clase # 12
-##
+## Comprehension Lists
+
+Son una manera muy fácil y rápida de construir listas en una sola linea de código, 
+lo que te permite que tu código sea mucho corto, eficiente y fácil de leer. 
+
+En su sintaxis, tenemos que va en el siguiente orden:
+
+1. nombre de la variable. 
+2. corchetes `[]`.
+3. expresión de lo que se quiere hacer. 
+4. ciclo `for variable in iterator`.
+5. `Condicionales` si lo ves necesario. 
+
+Tal cual que así:
+
+`variable = [expresión for item in iterable if condición]`
+
+Como una cosa curiosa, se escriben de izquierda a derecha y se leen de derecha
+a izquierda.
+
+## Beneficios:
+
+1. Crear listas de forma rápida y concisa. 
+2. Aplicar transformaciones a los elementos.
+3. Filtrar elementos.
+4. Aplicar una función a cada elemento de una lista.
+
+## Casos de Uso:
+
+1. Crear lista con los nombres de los archivos que termienn en '.txt' en un
+directorio.
+2. Crear una matris didimensional. 
+3. Muchas más cosas, tengo que investigar. 
