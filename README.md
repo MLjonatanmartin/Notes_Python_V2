@@ -677,3 +677,8 @@ a izquierda.
 directorio.
 2. Crear una matris didimensional. 
 3. Muchas más cosas, tengo que investigar. 
+
+---
+# Clase #13
+##
+
