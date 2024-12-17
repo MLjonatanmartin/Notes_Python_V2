@@ -737,3 +737,52 @@ los `()` y luego lo demás, y si usted pone una expresión sin parentesis, pytho
 va a evular las cosas de acuerdo a su nivel de prioridad y puede que su código 
 tenga errores. 
 
+---
+# Clase #14
+## Bucles y Control de iteraciones
+
+Con python tenemos dos tipos de ciclos que podemos usar para nuestro código, los
+ciclos iterar sobre cualquier iterable, tales como: strings, listas, tuplas, 
+dicionarios, etc.
+
+Sirven para realizar código con el iterable que estamos iterando y así sacar cosas.
+
+## Ciclo For
+
+Sirve para iterar iterables y ejecutar código mientras iteras. 
+Para declarar el ciclo `for`, lo haces de la siguiente manera:
+
+```python
+for <variable> in <iterable>:
+    código
+else:
+    codigo
+```
+
+Todo lo que esté dentro del for se va hacer a ejecutar hasta que termine de iterar.
+Puede agregar un `else` al final si quieres ejecutar algo al final de ciclo sin
+importar nada.
+
+## Ciclo While
+
+Sirve para ejecutar código mientras una condición es verdadera, es un ciclo infinito
+por lo que debes tener mucho cuidado, si no controlas el flujo se va a ejecutar 
+infinitamente.
+
+Para declara el ciclo `while` lo haces de la siguiente manera:
+
+```python 
+while <expresión>:
+    código
+    break
+``` 
+
+La expresión puede ser un `True` y todo el código que hagas dentro se va a ejercutar
+de manera infinita, pero puedes controlar eso modificando la expresion a lo largo
+de cada ejecución. Por otro lado, la sentencia break sirve para romper el ciclo del
+bucle y así tener un control.
+
+**NOTA**
+
+Puedes usar `if`, hacer otros ciclos anidados, declarar variables, hacer `if` 
+anidados, usar la sentencia `break` en ambos ciclos sin ningún problema. 
