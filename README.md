@@ -680,5 +680,60 @@ directorio.
 
 ---
 # Clase #13
-##
+## Condicionales y operadores lógicos
+
+Cuando estamos programando, a veces es importante tomar decisiones para que
+nuestro código se ejecute si pasa algo, no hacer algo sino pasa nada. 
+Por ejemplo, si tenemos un programa que verifica la edad de una persona para 
+entrar a un lugar, el progama tiene que evaluar y luego tiene que tomar 
+la decisión. 
+
+¿Cómo podemos hacerlo? Podemos hacer todo esto con las Condicionales y la manera
+de declarar lo son las siguientes:
+
+1. `if <condición>` con esto nosotros podemos colocar una condición que va 
+ser evaluada, si la condición se cumple, se ejecuta el código que está por debajo
+del if.
+
+2. `elif <condición>`con este podemos agregar más condiciones a evaluar y pasa
+de la misma manera.
+
+3. `else` cuando ya hemos evaluado todas las condiciones y todas son falsas, 
+usamos else para que ejecute una última cosa en caso que nada sea verdadero. 
+
+Recordemos que para usar esto, la identación es muy importante, cuando declaramos
+una de ellas, se crea una identación, para salir de la indentación solo tenemos
+que escribes normal como antes sin ningún espacio. 
+
+También podemos tener `if` anidados dentro de otros sin ningún problema.
+
+## Operadores Lógicos:
+
+Cuando vamos a comparar cosas en las declaracion de `if` estos son los operadores
+que podemos usar:
+
+1. `and` evalua si dos cosas son verdaderas, en caso que una sea falsa no se 
+ejecuta.
+2. `or` evaula si una de las condiciones es verdadera, si una es verdadera se 
+ejecuta, si ambas son falsas, no se ejecuta.
+3. `not` invierte la condición si es verdadera a falsa, y la falsa la vuelve 
+verdadera.
+
+## Operadores aritméticos:
+
+1. `>` mayor que.
+2. `<` menor que. 
+3. `>=` mayor o igual que.
+4. `<=` menor o igual que.
+5. `==` igual que.
+6. `!=` diferente que.
+
+## Consideraciones
+
+Usa por favor los `()` para agrupar declaraciones y que el código sea mucho más
+facil de leer, por otro lado, que usando los `()` le dices al interprete de python
+con que prioridad quieres que evalue las expresiones. Ya que python, primero evalua
+los `()` y luego lo demás, y si usted pone una expresión sin parentesis, python
+va a evular las cosas de acuerdo a su nivel de prioridad y puede que su código 
+tenga errores. 
 
