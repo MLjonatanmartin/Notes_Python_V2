@@ -786,3 +786,34 @@ bucle y así tener un control.
 
 Puedes usar `if`, hacer otros ciclos anidados, declarar variables, hacer `if` 
 anidados, usar la sentencia `break` en ambos ciclos sin ningún problema. 
+
+---
+# Clase #15
+## Generadores de Iteradores
+
+Nosotros podemos tener iteradores manuales, son aquellos que podemos declarar
+y usar un método para iterar hasta el final. Esto nos conviene para no ocupar
+mucha memoria y controlar los procesos de las iteraciones.
+
+Declarar iterador:
+
+`iter(value)` Usa este método para declarar un iterador.
+
+Declarar iteración:
+
+`next()` Usa este método para hacer una iteración del iterador ya declarado
+
+Como cosa a tener encuenta, es que si ya terminas con todas las iteraciones
+y sigues usando `next()` te va a dar un error. 
+
+## Combicación de Iterador
+
+Puedes usar `iter(value)` para combinarlo con el ciclo `for` y así hacer
+un ciclo del que no consuma muchos recursos, la diferencia de usar un ciclo `for`
+normal es que siempre devuelve toda una lista completa de la iteración y luego toma
+cada parte de la lista para ejercutar, lo que hace un gran consumo de recursos 
+cuando el iterable es muy grande. 
+
+Cuando tenemos un ciclo `for` combinado con `iter(value)` se controla
+la iteración y el espacio en memoria cuando lo hacemos con grandes cantidades de 
+datos. Nos beneficia mucho. 
