@@ -797,23 +797,37 @@ mucha memoria y controlar los procesos de las iteraciones.
 
 Declarar iterador:
 
-`iter(value)` Usa este método para declarar un iterador.
+`iter(value)` Usa este método para declarar un iterador en un iterable.
 
 Declarar iteración:
 
 `next()` Usa este método para hacer una iteración del iterador ya declarado
 
 Como cosa a tener encuenta, es que si ya terminas con todas las iteraciones
-y sigues usando `next()` te va a dar un error. 
+y sigues usando `next()` te va a dar un error de `StopIteration`. 
 
-## Combicación de Iterador
+## Combicación de Iteradores
 
 Puedes usar `iter(value)` para combinarlo con el ciclo `for` y así hacer
 un ciclo del que no consuma muchos recursos, la diferencia de usar un ciclo `for`
-normal es que siempre devuelve toda una lista completa de la iteración y luego toma
-cada parte de la lista para ejercutar, lo que hace un gran consumo de recursos 
-cuando el iterable es muy grande. 
+es que puedes tener un control más especifico sobre la iteración con los datos 
+que estás usando para iterar. Por otra parte, pues consume menos recursos pero
+es una diferencia muy leve. 
 
-Cuando tenemos un ciclo `for` combinado con `iter(value)` se controla
-la iteración y el espacio en memoria cuando lo hacemos con grandes cantidades de 
-datos. Nos beneficia mucho. 
+Generalmente las personas directamente usan `for` para que sea fácil de leer. Pero
+si tienes un caso especial te conviene usar el `iter(value)` además que te da la 
+ventaja de luego invocarlo en cualquier parte del código.
+
+## Generador
+
+Una función que produce una secuencia de números en los cuales podemos iterar. 
+Para usar esta función tenemos que usar:
+
+`yield` 
+
+Lo que hace crear los números sobre la marcha. Muy útil para ahorrar recursos
+y también controlar las iteraciones.
+
+---
+# Clase #16
+##
