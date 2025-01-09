@@ -830,4 +830,71 @@ y también controlar las iteraciones.
 
 ---
 # Clase #16
-##
+## Uso de Funciones en Python
+
+Para declarar una función en Python usa la palabra reservada:
+
+```python
+def name():
+    codigo
+    return
+```
+
+Las funciones siempre van con la palabra con `return` para retornar valores si es
+necesario, por otro lado siempre tienen la identación, todo el bloque de código 
+dentro de la identación pertenece a la función, para salir de la función solo
+sal del nivel de identación.
+
+
+Para poder declarar una función con datos de entrada es decir, parametros, en los
+`()` coloca los el nombre de las variables:
+
+```python
+def name(var_1, var_2, var_3):
+    codigo
+    return
+```
+
+Puedes colocar datos por defecto en los parametros si lo necesitas:
+
+```python
+def name(var_1='zz', var_2=0, var_3=True):
+    codigo
+    return
+```
+
+Para llamar a una función solo invocas el nombre de la función seguido de los `()`
+En caso que tengas parametros, le tienes que dar datos de entrada que son llamados
+argumentos:
+
+```python
+def name(var_1='zz', var_2=0, var_3=True):
+    codigo
+    return
+
+name('hh', 8, True)
+```
+
+por otro lado puedes pasarle los argumentos en desorden cuando llamas la función
+solo tienes que poner el nombre:
+
+```python
+def name(var_1='zz', var_2=0, var_3=True):
+    codigo
+    return
+
+name(var_2=8, var_3=True, var_1='hh')
+```
+
+Puedes colocar también funciones en variables:
+
+```python
+def name(var_1='zz', var_2=0, var_3=True):
+    codigo
+    return
+
+full_name = name('hh', 8, True)
+```
+
+---
+# Clase #17
