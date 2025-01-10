@@ -898,3 +898,39 @@ full_name = name('hh', 8, True)
 
 ---
 # Clase #17
+
+## Funciones Lambda
+
+Son funciones que no tienen un nombre y se declaran en una sola línea de código, 
+recibe parametros (separa los parametros pos comas `,`) y hace una operación
+rápida, no hay que poner le return ya que automáticamente retorna valores.
+
+Puedes asignar lambdas a variables, también colocar las en un diccionario.
+
+Declaración:
+
+```python
+
+add = lambda a, b : a + b
+```
+
+Cambia los valores de `a` y `b` y luego puedes cambiar la operación, en ese ejemplo
+se ha declarado una función lambda sencilla. 
+
+También las funciones lambdas pueden parametros con valores por defecto, solo 
+coloca el igual `=` al lado de los paramétros:
+
+```python 
+subs = lambda x=2, y=1: x - y
+```
+Las funciones lambda, son muy útiles para usar con las funciones:
+
+1. `reduce()`: Reduce elemenos de una lista.
+2. `filter()`: Para filtrar valores de una lista.
+3. `map()`: Para transformar elementos de una lista.
+
+
+---
+
+## Clase #18
+## 
