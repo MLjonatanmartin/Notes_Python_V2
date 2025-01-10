@@ -932,7 +932,7 @@ Las funciones lambda, son muy útiles para usar con las funciones:
 
 ---
 
-## Clase #18
+# Clase #18
 ## Recursividad
 
 Las funciones se pueden llamar de manera recursiva para ejecutar un código, 
@@ -942,5 +942,46 @@ el problema.
 Mirar el script de ejemplo y por otro lado practicar mucho. 
 
 ---
-## Clase #9
+# Clase #19
+## Manejo de Excepciones y Uso de Pass
+
+A veces tenemos errores en el código y para evitar que se rompa el Script, podemos
+manejar los errores con las siguientes palabras claves:
+
+1. `try`:
+
+Usa try para colocar el código malicioso que puede generar un error. 
+
+2. `except`:
+
+Con esto pudes capturar el error, colocar el nombre del error y ejecutar un código.
+
+3. `as`:
+
+Con esto puedes capturar el error con una variable para identificarlo.
+
+De tal manera, queda de la siguiente manera:
+
+```python
+
+try:
+    # código malicioso
+except <name_error> as <variable>:
+    # código para el error
+```
+
+Puedes colocar más excepts para más errores.
+
+Código Para saber todas las excepciones y errores de python:
+
+```python
+def print_exception_hierarchy(exception_class, indent=0):
+    print(' ' * indent + exception_class.__name__)
+    for subclass in exception_class.__subclasses__():
+        print_exception_hierarchy(subclass, indent + 4)
+
+print_exception_hierarchy(Exception)
+```
+---
+# Clase #18
 ## 
