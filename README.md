@@ -933,4 +933,14 @@ Las funciones lambda, son muy útiles para usar con las funciones:
 ---
 
 ## Clase #18
+## Recursividad
+
+Las funciones se pueden llamar de manera recursiva para ejecutar un código, 
+se tiene que tener un caso base y luego se puede llamar la función para revolver
+el problema.
+
+Mirar el script de ejemplo y por otro lado practicar mucho. 
+
+---
+## Clase #9
 ## 
